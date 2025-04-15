@@ -81,7 +81,7 @@ const sendTransaction = async (provider: IProvider): Promise<any> => {
     });
 
     // data for the transaction
-    const destination = "0x40e1c367Eca34250cAF1bc8330E9EddfD403fC56";
+    const destination = "0x4e685d8658007c79c6284da2e85Fc9165DEaEe85";
     const amount = parseEther("0.0001");
     const address = await walletClient.getAddresses();
 

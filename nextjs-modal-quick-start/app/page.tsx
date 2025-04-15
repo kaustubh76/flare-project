@@ -23,9 +23,7 @@ import RPC from "./ethersRPC";
 // IMP END - Blockchain Calls
 
 // IMP START - Dashboard Registration
-const clientId =
-  "BPi5PB_UiIZ-cPz1GtV5i1I2iOSOHuimiXBI0e-Oe_u6X3oVAbCiAZOTEBtTXw4tsluTITPqA8zMsfxIKMjiqNQ"; // get from https://dashboard.web3auth.io
-// IMP END - Dashboard Registration
+const clientId ="BCjElCBH9egV1DVBRvp6SBPvSauicObWoH6Vc_IxtIMU-N3Ux1lhvb_Q0gPZRXdog6wYmIkQiDfUzl5Lusy-f_A"// IMP END - Dashboard Registration
 
 // IMP START - Chain Config
 // const chainConfig = {
@@ -62,7 +60,7 @@ const privateKeyProvider = new EthereumPrivateKeyProvider({
 
 const web3AuthOptions: Web3AuthOptions = {
   clientId,
-  web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_MAINNET,
+  web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
   privateKeyProvider,
 };
 const web3auth = new Web3Auth(web3AuthOptions);
