@@ -295,7 +295,7 @@ function App() {
             <div className="relative flex h-16 items-center justify-between">
               <div className="flex flex-1 items-stretch justify-start">
                 <div className="flex shrink-0 items-center text-white text-lg">
-                  OptiPair
+                  OptionAMM
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">

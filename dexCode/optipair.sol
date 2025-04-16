@@ -19,7 +19,7 @@ contract OptionAMM {
     }
 
     Option[] public options;
-    IERC20 public usdc=IERC20(0x8c4aDf16abcf78Ca4235023c29451370D2cEF222);  // USDC token contract interface
+    IERC20 public usdc;  // USDC token contract interface
     FtsoV2Interface public ftso;
     bytes21 public constant ETH_USD_FEED_ID = bytes21(0x014554482f55534400000000000000000000000000);
     
@@ -36,8 +36,8 @@ contract OptionAMM {
     event LiquidityRemoved(address indexed provider, uint amount);
     event OptionSettled(uint indexed optionId, address indexed holder, uint payout, bool inTheMoney);
 
-    constructor( address _ftsoAddress) {
-        // usdc = IERC20(_usdcAddress);
+    constructor( address _usdcAddress, address _ftsoAddress) {
+        usdc = IERC20(_usdcAddress);
         ftso = FtsoV2Interface(_ftsoAddress);
     }
     
