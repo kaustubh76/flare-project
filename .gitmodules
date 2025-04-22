@@ -1,3 +1,6 @@
 [submodule "dexCode/lib/forge-std"]
 	path = dexCode/lib/forge-std
 	url = https://github.com/foundry-rs/forge-std
+[submodule "dexCode/lib/openzeppelin-contracts"]
+	path = dexCode/lib/openzeppelin-contracts
+	url = https://github.com/OpenZeppelin/openzeppelin-contracts
