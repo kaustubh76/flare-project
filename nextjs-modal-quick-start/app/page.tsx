@@ -25,8 +25,6 @@ import RPC from "./ethersRPC";
 // IMP START - Dashboard Registration
 const clientId ="BCjElCBH9egV1DVBRvp6SBPvSauicObWoH6Vc_IxtIMU-N3Ux1lhvb_Q0gPZRXdog6wYmIkQiDfUzl5Lusy-f_A"// IMP END - Dashboard Registration
 
-const walletConnectProjectId = "cd22d5e55f5e67eceaa858ef6f9f4a1e";
-
 // IMP START - Chain Config
 // const chainConfig = {
 //   chainNamespace: CHAIN_NAMESPACES.EIP155,
@@ -64,8 +62,6 @@ const web3AuthOptions: Web3AuthOptions = {
   clientId,
   web3AuthNetwork: WEB3AUTH_NETWORK.SAPPHIRE_DEVNET,
   privateKeyProvider,
-  walletConnectProjectId: walletConnectProjectId, // Added WalletConnect Project ID
-
 };
 const web3auth = new Web3Auth(web3AuthOptions);
 // IMP END - SDK Initialization
@@ -122,7 +118,6 @@ function App() {
         // IMP START - Configuring External Wallets
         const adapters = await getDefaultExternalAdapters({
           options: web3AuthOptions,
-          walletConnectProjectId: walletConnectProjectId, // Added WalletConnect Project ID here as well
         });
         adapters.forEach((adapter: IAdapter<unknown>) => {
           web3auth.configureAdapter(adapter);
