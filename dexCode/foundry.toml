@@ -3,6 +3,7 @@ src = "src"
 out = "out"
 libs = ["lib"]
 dotenv = ".env"
+solc_version = "0.8.19"
 [dependencies]
 openzeppelin-contracts = { version = "4.9.3" }
 
